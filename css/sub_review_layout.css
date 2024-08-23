@@ -153,33 +153,3 @@ nav > ul > li:hover .submenu {
 
 /* 메인 */
 /* 공지사항 / 이용자 리뷰 */
-.teb_wrap {
-  width: auto;
-  height: auto;
-  text-align: center;
-  padding-top: 100px;
-  font-size: 38px;
-  color: #181818;
-}
-
-.teb_wrap > div:hover {
-  cursor: pointer;
-}
-
-.teb_wrap > div > span {
-  color: #a7a7a7;
-  padding-left: 30px;
-}
-
-.teb_wrap > div::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 170px;
-  height: 30px;
-  left: 764px;
-  top: 247px;
-  z-index: -1;
-  background: rgb(255 235 59);
-  transition: all 0.3s ease;
-}

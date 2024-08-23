@@ -30,6 +30,36 @@ body {
 a {
   color: #1e1e1e;
 }
+/* TOP 버튼 */
+.box {
+  width: 500px;
+  border: 4px solid dodgerblue;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+#top {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: chartreuse;
+  color: black;
+  text-align: center;
+  line-height: 100px;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+}
+
+h6 {
+  position: fixed;
+  bottom: 200px;
+  right: 50px;
+}
 
 /* 상단 메뉴 */
 #wrap {
@@ -174,6 +204,27 @@ nav > ul > li:hover .submenu {
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+  z-index: 0;
+}
+
+.main_person {
+  box-sizing: border-box;
+}
+
+.visual_title {
+  position: relative;
+}
+
+.visual_title span::after {
+  content: "";
+  display: inline-block;
+  width: 20%;
+  height: 30%;
+  background-color: #fce53d;
+  position: absolute;
+  z-index: -1;
+  top: 73%;
+  left: 40%;
 }
 
 .box1_text {
@@ -202,6 +253,11 @@ nav > ul > li:hover .submenu {
   line-height: 60px;
   margin-top: 30px;
   margin-bottom: 44px;
+}
+
+.visual_title span::after {
+  content: line;
+  display: block;
 }
 
 .main_write {
@@ -299,6 +355,19 @@ nav > ul > li:hover .submenu {
   text-align: center;
   padding-top: 60px;
   position: relative;
+  z-index: 2;
+}
+
+.box_top span::after {
+  content: "";
+  display: inline-block;
+  width: 44%;
+  height: 11%;
+  background-color: #fce53d;
+  z-index: -1;
+  position: absolute;
+  top: 42%;
+  left: 14%;
 }
 
 .btn_text {
@@ -319,6 +388,7 @@ nav > ul > li:hover .submenu {
   margin-bottom: 20px;
   border: 1px solid #fff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .btn1 .btn_b1:hover {
   color: #fff;
@@ -336,6 +406,7 @@ nav > ul > li:hover .submenu {
   margin-bottom: 20px;
   border: 1px solid #fff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn2 .btn_b2:hover {
@@ -386,6 +457,15 @@ nav > ul > li:hover .submenu {
   align-content: center;
 }
 
+/*  */
+.counter {
+  padding: 0 30px;
+  font-size: 60px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+
 .personnel {
   font-size: 90px;
   font-weight: 900;
@@ -394,7 +474,7 @@ nav > ul > li:hover .submenu {
   padding-top: 63%;
 }
 
-.personnel > span {
+.personnel span {
   font-size: 50px;
   font-weight: 900;
 }
@@ -543,6 +623,7 @@ nav > ul > li:hover .submenu {
   border: 1px solid #227aff;
   margin-top: 5%;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .introduction_btn > .introduction_btn1:hover {
@@ -697,6 +778,7 @@ nav > ul > li:hover .submenu {
   border: 1px solid #ebebeb;
   background-color: #ebebeb;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .map_btn .map_btn1:hover {

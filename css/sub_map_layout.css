@@ -164,11 +164,11 @@ main {
 }
 
 .warning {
-  width: 360px;
-  height: 50px;
+  width: 350px;
+  height: 46px;
   background-color: #fce53d;
   border-radius: 30px;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   align-content: center;
   position: relative;
@@ -176,10 +176,12 @@ main {
   top: 50px;
   margin-left: -180px;
   z-index: 999;
+  line-height: 46px;
 }
 
-.warning > img {
-  margin-right: 12px;
+.warning img {
+  margin-right: 4%;
+  margin-bottom: -1%;
 }
 
 .map > iframe {
