@@ -1,0 +1,216 @@
+@charset "uft-8";
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* 드래그 했을 때 */
+::selection {
+  background-color: #fce53d;
+  color: #227aff;
+}
+
+/* 스크롤 모양*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-image: linear-gradient(-225deg, #fce53d 0%, #227aff 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fce53d;
+}
+a {
+  color: #1e1e1e;
+}
+
+/* 상단 메뉴 */
+#wrap {
+  width: 100%;
+  height: fit-content;
+}
+
+header {
+  width: 100%;
+  height: 134px;
+}
+
+/* 로고 */
+.header_wrap1 {
+  width: 100%;
+  height: 61px;
+}
+
+h1 {
+  width: 144px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* 하단 메뉴 */
+/* 1차메뉴 */
+.header_wrap2 {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  height: fit-content;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_wrap2 {
+  width: 50%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+/* 애니메이션 */
+.menu_wrap2 > li > a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 30%;
+  top: 36%;
+  right: 0;
+  z-index: -1;
+  background: rgb(255 235 59);
+  transition: all 0.3s ease;
+}
+.menu_wrap2 > li:hover a::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+nav > ul > li {
+  line-height: 68px;
+  position: relative;
+}
+
+nav > ul > li > a:hover {
+  color: #181818;
+}
+
+/* 2차메뉴 */
+.submenu {
+  width: 200px;
+  line-height: 40px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+  position: absolute;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-left: -68px;
+  border-radius: 50px;
+}
+
+nav > ul > li:hover .submenu {
+  height: 40px;
+}
+
+.submenu a:hover {
+  color: #181818;
+  font-weight: 500;
+}
+
+/* 아이콘 */
+.icon {
+  width: 8%;
+  height: 68px;
+  position: absolute;
+  right: 0;
+  left: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon > a:hover {
+  background-image: url(../img/ellipse.png);
+  background-repeat: no-repeat;
+}
+
+main {
+  width: auto;
+  height: auto;
+  background-color: #f9f9f9;
+}
+
+/* 섹션1_지도 */
+
+.map {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.warning {
+  width: 360px;
+  height: 50px;
+  background-color: #fce53d;
+  border-radius: 30px;
+  font-size: 22px;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  left: 50%;
+  top: 50px;
+  margin-left: -180px;
+  z-index: 999;
+}
+
+.warning > img {
+  margin-right: 12px;
+}
+
+.map > iframe {
+  position: relative;
+  top: -50px;
+}
+
+/* 섹션2 */
+.spirit {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.spirit_left {
+  width: 50%;
+  height: auto;
+}
+
+.my_profile {
+  width: 190px;
+  height: 48px;
+  background-color: #fce53d;
+  border: 1px solid #f9f9f9;
+  border-radius: 24px;
+  text-align: center;
+  font-size: 26px;
+}
+
+.spirit_right {
+  width: 50%;
+  height: fit-content;
+}

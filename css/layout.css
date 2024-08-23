@@ -6,6 +6,27 @@ body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
+/* 드래그 했을 때 */
+::selection {
+  background-color: #fce53d;
+  color: #227aff;
+}
+
+/* 스크롤 모양*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-image: linear-gradient(-225deg, #fce53d 0%, #227aff 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fce53d;
+}
+
 a {
   color: #1e1e1e;
 }
@@ -28,10 +49,8 @@ header {
 }
 
 h1 {
-  width: 144px;
-  height: 100%;
-  margin: 0 auto;
-  background: url("../img/css_sprites.png") -10px -14px;
+  display: flex;
+  justify-content: center;
 }
 
 /* 하단 메뉴 */
@@ -152,8 +171,16 @@ nav > ul > li:hover .submenu {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  position: relative;
+}
+
+.box1_text {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 14%;
 }
 
 .box1_text > .point {
@@ -180,16 +207,79 @@ nav > ul > li:hover .submenu {
 .main_write {
   width: 100%;
   height: fit-content;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 300;
-  line-height: 42px;
+  line-height: 40px;
   margin-bottom: 100px;
 }
 
-.box2_text {
-  width: 28%;
+.main_right_img {
+  width: auto;
   height: fit-content;
-  margin-left: 4%;
+  position: absolute;
+  left: 64%;
+}
+
+.box2_Emoji {
+  position: relative;
+  left: 46%;
+}
+.shape_1 {
+  position: absolute;
+  top: -19vh;
+  left: -30vw;
+  opacity: 0;
+  animation: twink 3s linear 0s infinite forwards;
+}
+.shape_2 {
+  position: absolute;
+  top: -29vh;
+  left: -21vw;
+  opacity: 0;
+  animation: twink 6s linear 0.3s infinite forwards;
+}
+.shape_3 {
+  position: absolute;
+  top: 6vh;
+  left: -4vw;
+  opacity: 0;
+  animation: twink 3s linear 0.6s infinite forwards;
+}
+.shape_4 {
+  position: absolute;
+  top: -15vh;
+  left: -1vw;
+  opacity: 0;
+  animation: twink 7s linear 0.7s infinite forwards;
+}
+.shape_5 {
+  position: absolute;
+  top: 6vh;
+  left: -29vw;
+  opacity: 0;
+  animation: twink 5s linear 1.1s infinite forwards;
+}
+@keyframes twink {
+  0% {
+    transform: scale(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    transform: scale(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(1, 1) rotate(180deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0, 0) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0, 0) rotate(0deg);
+    opacity: 1;
+  }
 }
 
 /* 우측 메인 */
@@ -219,7 +309,7 @@ nav > ul > li:hover .submenu {
   top: 378px;
 }
 
-.btn1 {
+.btn1 > .btn_b1 {
   width: 308px;
   height: 58px;
   font-size: 22px;
@@ -227,34 +317,31 @@ nav > ul > li:hover .submenu {
   background-color: #fff;
   border-radius: 30px;
   margin-bottom: 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.btn1 .btn_b1:hover {
+  color: #fff;
+  background-color: #227aff;
+  cursor: pointer;
 }
 
-.btn1 > a {
-  line-height: 55px;
-  color: #1e1e1e;
-}
-
-.btn1 > img {
-  margin-bottom: -5px;
-}
-
-.btn2 {
+.btn2 > .btn_b2 {
   width: 308px;
   height: 58px;
   font-size: 22px;
   text-align: center;
-  text-shadow: #e4e4e4;
   background-color: #fff;
   border-radius: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
 
-.btn2 > a {
-  line-height: 55px;
-  color: #1e1e1e;
-}
-
-.btn2 > img {
-  margin-bottom: -5px;
+.btn2 .btn_b2:hover {
+  color: #fff;
+  background-color: #227aff;
+  cursor: pointer;
 }
 
 /* 섹션2 */
@@ -263,6 +350,7 @@ nav > ul > li:hover .submenu {
   height: auto;
 }
 /* 좌측 섹션 */
+
 .num_wrap {
   width: 100%;
   height: auto;
@@ -282,7 +370,7 @@ nav > ul > li:hover .submenu {
   top: 250px;
   left: 29%;
   border-radius: 30px;
-  background-image: url(../img/service_pic.png);
+  background-image: url(../img/index/service_pic.png);
   padding-top: 50px;
 }
 
@@ -376,17 +464,24 @@ nav > ul > li:hover .submenu {
   top: 57%;
 }
 
-.hope_personnel,
+.hope_personnel {
+  font-size: 90px;
+  font-weight: 900;
+  padding-top: 122px;
+}
+.hope_personnel > span {
+  font-size: 50px;
+  font-weight: 900;
+}
+
 .review_personnel {
   font-size: 90px;
   font-weight: 900;
-  padding-top: 18%;
-  margin-left: -3%;
+  padding-top: 125px;
 }
-
-.hope_personnel > span,
 .review_personnel > span {
   font-size: 50px;
+  font-weight: 900;
 }
 
 .hope_description {
@@ -436,20 +531,24 @@ nav > ul > li:hover .submenu {
   line-height: 29px;
 }
 
-.introduction_btn {
-  width: 173px;
+.introduction_btn > .introduction_btn1 {
+  width: 170px;
   height: 50px;
   font-size: 22px;
   font-weight: 400;
   background-color: #227aff;
+  color: #fff;
   border-radius: 30px;
   align-content: center;
-  margin-left: 36%;
-  margin-top: 12%;
+  border: 1px solid #227aff;
+  margin-top: 5%;
+  cursor: pointer;
 }
 
-.introduction_btn > a {
+.introduction_btn > .introduction_btn1:hover {
+  background-color: #c7c7c7;
   color: #fff;
+  border: 1px solid #c7c7c7;
 }
 
 /* 섹션4 */
@@ -463,8 +562,14 @@ nav > ul > li:hover .submenu {
 }
 
 .yellow_text > img {
-  margin-left: 5%;
+  margin-left: 6%;
   margin-top: 6%;
+}
+
+.pic2 {
+  animation-duration: 0.3s;
+  animation: sca duration timing-function delay iteration-count direction
+    fill-mode;
 }
 
 .easy {
@@ -558,7 +663,7 @@ nav > ul > li:hover .submenu {
 .map {
   width: 100%;
   height: 600px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   padding-left: 22%;
 }
 
@@ -580,41 +685,54 @@ nav > ul > li:hover .submenu {
   color: #474747;
 }
 
-.map_btn {
-  border: 2px solid #e4e4e4;
+.map_btn .map_btn1 {
   width: 173px;
   height: 50px;
   font-size: 22px;
   font-weight: 400;
   border-radius: 30px;
-  align-content: center;
   margin-left: 72%;
   margin-top: 61%;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  cursor: pointer;
 }
 
-.map_btn > a {
+.map_btn .map_btn1:hover {
   background-color: #227aff;
+  color: #fff;
 }
 
 /* footer */
 .foot_wrap {
   width: auto;
-  height: auto;
+  height: 60px;
   display: flex;
-  background-color: #fce53d;
   padding-left: 160px;
+  position: relative;
   align-items: center;
+  background-color: #f8f8f8;
+}
+
+.foot_wrap .back > img {
+  margin-left: 8px;
 }
 
 .foot_right {
   width: 800px;
   height: 60px;
-  background-color: #e4e4e4;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  right: 10%;
 }
 
 .foot_right > .moa {
-  color: #d3d3d3;
+  color: #c7c7c7;
+}
+
+.foot_wrap .foot_right a:hover {
+  color: #227aff;
 }
