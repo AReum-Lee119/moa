@@ -197,7 +197,7 @@ nav > ul > li:hover .submenu {
 .box_left {
   width: 74%;
   height: 760px;
-  background-color: #f6f6f6;
+  background-color: #f0f0f0;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   display: flex;
@@ -218,13 +218,13 @@ nav > ul > li:hover .submenu {
 .visual_title span::after {
   content: "";
   display: inline-block;
-  width: 20%;
+  width: 17%;
   height: 30%;
   background-color: #fce53d;
   position: absolute;
   z-index: -1;
-  top: 73%;
-  left: 40%;
+  top: 72%;
+  left: 41%;
 }
 
 .box1_text {
@@ -474,9 +474,13 @@ nav > ul > li:hover .submenu {
   padding-top: 63%;
 }
 
-.personnel span {
+.Num {
   font-size: 50px;
   font-weight: 900;
+  color: #fce53d;
+  position: absolute;
+  top: 77%;
+  left: 63%;
 }
 
 .description {
@@ -681,6 +685,13 @@ nav > ul > li:hover .submenu {
 
 .pic2 > img {
   border-radius: 30px;
+  cursor: pointer;
+}
+
+.pic2 > img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  overflow: hidden;
 }
 
 .pic1 {

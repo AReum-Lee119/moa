@@ -159,7 +159,6 @@ nav > ul > li:hover .submenu {
   text-align: center;
   padding-top: 100px;
   font-size: 38px;
-  color: #181818;
 }
 
 .teb_wrap {
@@ -178,7 +177,7 @@ nav > ul > li:hover .submenu {
 
 .teb_wrap ul .teb_notice {
   color: #181818;
-  width: 180px;
+  width: 150px;
   position: relative;
 }
 
@@ -199,7 +198,7 @@ nav > ul > li:hover .submenu {
 .teb_wrap ul .teb_notice:hover a::after {
   left: 0;
   right: auto;
-  width: 180px;
+  width: 150px;
 }
 
 .teb_review a {

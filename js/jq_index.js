@@ -9,7 +9,26 @@ $(function () {
 // 카운트 다운
 
 $(function () {
-  var cnt0 = 748;
+  var cnt0 = 5000;
+
+  counterFn();
+
+  function counterFn() {
+    id0 = setInterval(count0Fn, 10);
+
+    function count0Fn() {
+      cnt0++;
+      if (cnt0 > 5595) {
+        clearInterval(id0);
+      } else {
+        $(".personnel").text(cnt0);
+      }
+    }
+  }
+});
+
+$(function () {
+  var cnt0 = 614;
 
   counterFn();
 
@@ -28,7 +47,7 @@ $(function () {
 });
 
 $(function () {
-  var cnt0 = 2012;
+  var cnt0 = 1759;
 
   counterFn();
 
