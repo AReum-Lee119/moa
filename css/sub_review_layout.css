@@ -205,7 +205,10 @@ nav > ul > li:hover .submenu {
   width: auto;
   height: fit-content;
   padding-top: 60px;
+  position: relative;
 }
+
+/* 리뷰1 */
 
 .insta_1 {
   width: 100%;
@@ -218,25 +221,71 @@ nav > ul > li:hover .submenu {
 
 .insta_1 img {
   border-radius: 20px;
-}
-.insta_1 .review1:hover {
-  filter: brightness(30%);
+  cursor: pointer;
 }
 
-.review_txt1 h2 {
-  font-size: 28px;
+.insta_review_1 img {
+  overflow: hidden;
+}
+
+.insta_txt1 h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.insta_review_1 {
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* .review_txt1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* 텍스트 */
+/* .review_txt1 h2 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 80px;
+  color: #fff;
+  text-align: center;
+  z-index: ;
 }
 .review_txt1 p {
   font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+} */
+
+.insta_1 .insta_review_1:hover {
+  filter: brightness(30%);
+  transition: 0.3s;
 }
 
 .insta_1 .review2:hover {
   filter: brightness(30%);
-}
-.insta_1 .review3:hover {
-  filter: brightness(30%);
+  transition: 0.3s;
 }
 
+.insta_1 .review3:hover {
+  filter: brightness(30%);
+  transition: 0.3s;
+}
+
+/* 리뷰2 */
 .insta_2 {
   width: 100%;
   height: auto;
@@ -244,6 +293,7 @@ nav > ul > li:hover .submenu {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
+  cursor: pointer;
 }
 
 .insta_2 img {
@@ -253,12 +303,15 @@ nav > ul > li:hover .submenu {
 
 .insta_2 .review4:hover {
   filter: brightness(30%);
+  transition: 0.3s;
 }
 .insta_2 .review5:hover {
   filter: brightness(30%);
+  transition: 0.3s;
 }
 .insta_2 .review6:hover {
   filter: brightness(30%);
+  transition: 0.3s;
 }
 
 /* 더보기 버튼 */

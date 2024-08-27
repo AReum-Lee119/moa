@@ -178,11 +178,13 @@ nav > ul > li:hover .submenu {
 .main_img1 > img:hover {
   filter: brightness(0.5);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .main_img2 > img:hover {
   filter: brightness(0.5);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .main_text > h2::after {
