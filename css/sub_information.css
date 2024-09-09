@@ -29,6 +29,37 @@ a {
   color: #1e1e1e;
 }
 
+/* TOP 버튼 */
+.box {
+  width: 500px;
+  border: 4px solid dodgerblue;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+#top {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: chartreuse;
+  color: black;
+  text-align: center;
+  line-height: 100px;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+}
+
+h6 {
+  position: fixed;
+  bottom: 200px;
+  right: 50px;
+}
+
 /* 상단 메뉴 */
 #wrap {
   width: 100%;
@@ -227,6 +258,7 @@ nav > ul > li:hover .submenu {
   border: 1px solid #227aff;
   margin-top: 2%;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .section_2 > .adult:hover {
@@ -247,6 +279,7 @@ nav > ul > li:hover .submenu {
   border: 1px solid #227aff;
   margin-top: 2%;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .section_2 > .minors:hover {
@@ -354,6 +387,7 @@ nav > ul > li:hover .submenu {
   border: 1px solid #227aff;
   margin-top: 50px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .adult2_text > button:hover {
@@ -410,6 +444,7 @@ nav > ul > li:hover .submenu {
   border: 1px solid #227aff;
   cursor: pointer;
   margin-top: 50px;
+  transition: all 0.3s ease;
 }
 
 .minors2_text > button:hover {

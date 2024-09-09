@@ -191,14 +191,14 @@ nav > ul > li:hover .submenu {
   margin: 0 auto;
 }
 
-.teb_wrap ul .teb_notice {
+.teb_wrap ul .teb_review {
   color: #181818;
-  width: 150px;
+  width: 220px;
   position: relative;
 }
 
 /* 애니메이션 */
-.teb_notice a::after {
+.teb_review a::after {
   position: absolute;
   content: "";
   width: 0;
@@ -211,13 +211,13 @@ nav > ul > li:hover .submenu {
   transition: all 0.4s ease;
 }
 
-.teb_wrap ul .teb_notice:hover a::after {
+.teb_wrap ul .teb_review:hover a::after {
   left: 0;
   right: auto;
-  width: 150px;
+  width: 220px;
 }
 
-.teb_review a {
+.teb_notice a {
   color: #a7a7a7;
 }
 
@@ -443,97 +443,4 @@ nav > ul > li:hover .submenu {
   margin-left: 70px;
   padding-left: 10px;
   margin-bottom: 120px;
-}
-
-/* 체크박스 */
-/* input 초기화 */
-input[type="checkbox"] {
-  display: none;
-}
-/* (체크박스, 텍스트) 정렬 맞추기 */
-.checkbox_label {
-  display: flex;
-  align-items: center;
-  margin-left: 660px;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-/* 체크박스 디자인 */
-.checkbox_icon::before {
-  content: "";
-  display: block;
-  margin-right: 5px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: 1px solid #9da3a5;
-  box-sizing: border-box;
-  position: relative;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-/* checked */
-.checkbox_label input:checked + .checkbox_icon::before {
-  transition: all 0.15s ease;
-  background: url(../img/sub_registration_individual/check.png) #fce53d
-    no-repeat center;
-  border: none;
-}
-
-/* 버튼 */
-.near_wrap {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-  margin-bottom: 300px;
-}
-
-.near_btn {
-  width: 400px;
-  height: 50px;
-  background-color: #fce53d;
-  border-radius: 8px;
-  font-size: 20px;
-  cursor: pointer;
-  text-align: center;
-  line-height: 50px;
-  position: absolute;
-  top: 22px;
-  left: 770px;
-}
-
-/* footer */
-.foot_wrap {
-  width: auto;
-  height: 60px;
-  display: flex;
-  padding-left: 160px;
-  position: relative;
-  align-items: center;
-  background-color: #f8f8f8;
-}
-
-.foot_wrap .back > img {
-  margin-left: 8px;
-}
-
-.foot_right {
-  width: 800px;
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  right: 10%;
-}
-
-.foot_right > .moa {
-  color: #c7c7c7;
-}
-
-.foot_wrap .foot_right a:hover {
-  color: #227aff;
 }

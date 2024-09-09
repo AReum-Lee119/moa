@@ -6,13 +6,15 @@
     <title>MOA!</title>
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="icon" href="./img/index/Favicon.png" />
-    <script src="./js/jquery.min.js"></script>
     <!-- 올라가는 효과 -->
     <script src="./js/jq_index.js"></script>
+    <script src="./js/jquery.min.js"></script>
   </head>
   <body>
     <div id="wrap">
-      <header>
+      <!-- 마우스 커서 이벤트 -->
+
+
         <!-- 로고 -->
         <div class="header_wrap1">
           <h1>
@@ -23,14 +25,14 @@
         <div class="header_wrap2">
           <nav>
             <ul class="menu_wrap2">
-              <li><a href="#">이용안내</a></li>
-              <li><a href="#">참가등록</a></li>
-              <li><a href="#">지도</a></li>
+              <li><a href="./sub_information.html">이용안내</a></li>
+              <li><a href="./sub_registration_individual.html">참가등록</a></li>
+              <li><a href="./sub_map.html">지도</a></li>
               <li>
                 <a href="#">커뮤니티</a>
                 <ul class="submenu">
-                  <li><a href="#">공지사항</a></li>
-                  <li><a href="#">이용자 리뷰</a></li>
+                  <li><a href="./sub_notice.html">공지사항</a></li>
+                  <li><a href="./sub_review.html">이용자 리뷰</a></li>
                 </ul>
               </li>
             </ul>
@@ -85,12 +87,20 @@
             </p>
             <div class="btn_text">
               <div class="btn1">
-                <button type="button" class="btn_b1">
+                <button
+                  type="button"
+                  class="btn_b1"
+                  onclick="location.href='http://127.0.0.1:5500/sub_information%20.html'"
+                >
                   관심있는 봉사 보러가기
                 </button>
               </div>
               <div class="btn2">
-                <button type="button" class="btn_b2">
+                <button
+                  type="button"
+                  class="btn_b2"
+                  onclick="location.href='http://127.0.0.1:5500/sub_information%20.html'"
+                >
                   관심있는 기부 보러가기
                 </button>
               </div>
@@ -148,7 +158,13 @@
               시회적 약자를 위한 어플입니다.
             </p>
             <div class="introduction_btn">
-              <button type="button" class="introduction_btn1">더보기</button>
+              <button
+                type="button"
+                class="introduction_btn1"
+                onclick="location.href='http://127.0.0.1:5500/sub_information%20.html'"
+              >
+                더보기
+              </button>
             </div>
           </div>
         </div>
@@ -203,7 +219,13 @@
             </p>
             <p class="map_text">쉬운 참가등록과 지도도 살펴보세요.</p>
             <div class="map_btn">
-              <button type="button" class="map_btn1">더보기</button>
+              <button
+                type="button"
+                class="map_btn1"
+                onclick="location.href='http://127.0.0.1:5500/sub_map.html'"
+              >
+                더보기
+              </button>
             </div>
           </div>
         </div>

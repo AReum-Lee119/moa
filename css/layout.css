@@ -5,6 +5,7 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
+/* 마우스 커서 이벤트 */
 
 /* 드래그 했을 때 */
 ::selection {
