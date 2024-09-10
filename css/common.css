@@ -1,0 +1,242 @@
+@charset "uft-8";
+@import "./reset.css";
+@import "../index.html";
+@import "../css/layout.css";
+
+@import "../sub/sub_review.html";
+@import "./sub_review_layout.css";
+
+@import "../sub/sub_registration_individual.html";
+@import "../css/sub_registration_individual_layout.css";
+
+@import "../sub/sub_notice.html";
+@import "../css/sub_notice_layout.css";
+
+@import "../sub/sub_more_than_two_people.html";
+@import "../css/sub_more_than_two_people.css";
+
+@import "../sub/sub_map.html";
+@import "../css/sub_map_layout.css";
+
+@import "../sub/sub_information.html";
+@import "../css/sub_information.css";
+
+@import " ../js/jquery.min.js";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* 마우스 커서 이벤트 */
+
+/* 드래그 했을 때 */
+::selection {
+  background-color: #fce53d;
+  color: #227aff;
+}
+
+/* 스크롤 모양*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-image: linear-gradient(-225deg, #fce53d 0%, #227aff 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fce53d;
+}
+
+a {
+  color: #1e1e1e;
+}
+/* TOP 버튼 */
+.top_box {
+  width: 500px;
+  border: 4px solid dodgerblue;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+
+#top {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: chartreuse;
+  color: black;
+  text-align: center;
+  line-height: 100px;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+}
+
+h6 {
+  position: fixed;
+  bottom: 200px;
+  right: 50px;
+}
+
+/* 상단 메뉴 */
+#wrap {
+  width: 100%;
+  height: fit-content;
+}
+
+header {
+  width: 100%;
+  height: 134px;
+}
+
+/* 로고 */
+.header_wrap1 {
+  width: 100%;
+  height: 61px;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  left: 47%;
+}
+
+/* 하단 메뉴 */
+/* 1차메뉴 */
+.header_wrap2 {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  height: fit-content;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_wrap2 {
+  width: 50%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+/* 애니메이션 */
+.menu_wrap2 > li > a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 30%;
+  top: 36%;
+  right: 0;
+  z-index: -1;
+  background: rgb(255 235 59);
+  transition: all 0.3s ease;
+}
+.menu_wrap2 > li:hover a::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+nav > ul > li {
+  line-height: 68px;
+  position: relative;
+}
+
+nav > ul > li > a:hover {
+  color: #181818;
+}
+
+/* 2차메뉴 */
+.submenu {
+  width: 200px;
+  line-height: 40px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+  position: absolute;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-left: -68px;
+  border-radius: 50px;
+}
+
+nav > ul > li:hover .submenu {
+  height: 40px;
+}
+
+.submenu a:hover {
+  color: #181818;
+  font-weight: 500;
+}
+
+/* 아이콘 */
+.icon {
+  width: 8%;
+  height: 68px;
+  position: absolute;
+  right: 0;
+  left: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon > a:hover {
+  background-image: url(../img/ellipse.png);
+  background-repeat: no-repeat;
+}
+
+/* footer */
+.foot_wrap {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding-left: 100px;
+  align-items: center;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+
+.foot_wrap .back > img {
+  margin-left: 8px;
+}
+
+.foot_right {
+  width: fit-content;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+  gap: 26px;
+}
+
+.foot_right > .moa {
+  color: #c7c7c7;
+}
+
+.foot_wrap .foot_right a:hover {
+  color: #227aff;
+}

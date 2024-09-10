@@ -4,50 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MOA!</title>
-    <link rel="stylesheet" href="./css/layout.css" />
     <link rel="icon" href="./img/index/Favicon.png" />
-    <!-- 올라가는 효과 -->
-    <script src="./js/jq_index.js"></script>
-    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/common.css">
+
+    <link rel="stylesheet" href="./js/jq_index.js">
+    <link rel="stylesheet" href="./js/jquery.min.js">
+
+
   </head>
   <body>
     <div id="wrap">
-      <!-- 마우스 커서 이벤트 -->
-
-
+      <header>
         <!-- 로고 -->
         <div class="header_wrap1">
           <h1>
-            <a href="/"><img src="./img/index/logo.png" alt=" 로고" /></a>
+            <a href="/"><img src="../img/index/logo.png" alt=" 로고" /></a>
           </h1>
         </div>
         <!-- 메뉴 -->
         <div class="header_wrap2">
           <nav>
             <ul class="menu_wrap2">
-              <li><a href="./sub_information.html">이용안내</a></li>
-              <li><a href="./sub_registration_individual.html">참가등록</a></li>
-              <li><a href="./sub_map.html">지도</a></li>
+              <li><a href="../sub/sub_information.html">이용안내</a></li>
+              <li><a href="../sub/sub_registration_individual.html">참가등록</a></li>
+              <li><a href="../sub/sub_map.html">지도</a></li>
               <li>
-                <a href="#">커뮤니티</a>
+                <a href="../sub/sub_notice.html">커뮤니티</a>
                 <ul class="submenu">
-                  <li><a href="./sub_notice.html">공지사항</a></li>
-                  <li><a href="./sub_review.html">이용자 리뷰</a></li>
+                  <li><a href="../sub/sub_notice.html">공지사항</a></li>
+                  <li><a href="../sub/sub_review.html">이용자 리뷰</a></li>
                 </ul>
               </li>
             </ul>
           </nav>
           <!-- 아이콘 -->
           <div class="icon">
-            <a href="#"><img src="./img/index/menu1.png" alt="관심" /></a>
-            <a href="#"><img src="./img/index/menu2.png" alt="메세지" /></a>
-            <a href="#"><img src="./img/index/menu3.png" alt="로그인" /></a>
+            <a href="#"><img src="../img/index/menu1.png" alt="관심" /></a>
+            <a href="#"><img src="../img/index/menu2.png" alt="메세지" /></a>
+            <a href="#"><img src="../img/index/menu3.png" alt="로그인" /></a>
           </div>
         </div>
       </header>
-      <body>
-        <!-- TOP버튼 -->
-        <a href="#" id="top">TOP</a>
+      
+      <!-- TOP버튼 -->
+      <a href="#" id="top">TOP</a>
 
         <!-- 메인 -->
         <div class="main_wrap">
@@ -90,7 +91,7 @@
                 <button
                   type="button"
                   class="btn_b1"
-                  onclick="location.href='http://127.0.0.1:5500/sub_information%20.html'"
+                  onclick="location.href='http://127.0.0.1:5500/sub/sub_registration_individual.html'"
                 >
                   관심있는 봉사 보러가기
                 </button>
@@ -99,7 +100,7 @@
                 <button
                   type="button"
                   class="btn_b2"
-                  onclick="location.href='http://127.0.0.1:5500/sub_information%20.html'"
+                  onclick="location.href='http://127.0.0.1:5500/sub/sub_registration_individual.html'"
                 >
                   관심있는 기부 보러가기
                 </button>
@@ -111,30 +112,31 @@
         <div class="num_wrap">
           <!-- 좌측 섹션 -->
           <div class="num">
+            
             <div>
               <p class="num_title">참여인원</p>
-              <p class="personnel">5,595</p>
-              <p class="Num">명</p>
-              <p class="description">
+              <p class="num_personnel">5,595</p>
+              <p class="num">명</p>
+              <p class="num_description">
                 2024년 모아를 통해 3,595명이 봉사 및 기부를 하였습니다.
               </p>
             </div>
           </div>
           <!-- 우측섹션 -->
-          <div class="hore_wrap">
-            <div class="hope_wrap">
+          <div class="main_hore_wrap">
+            <div class="main_hope_wrap">
               <img src="./img/Star 3.png" alt="별" />
-              <p class="hope">봉사 재희망률</p>
-              <div class="hope_personnel">900<span> 명</span></div>
-              <p class="hope_description">
+              <p class="main_hope">봉사 재희망률</p>
+              <div class="main_hope_personnel">900<span> 명</span></div>
+              <p class="main_hope_description">
                 2024년 모아를 통해 봉사를 재희망하는 사람들입니다.
               </p>
             </div>
-            <div class="review_wrap">
+            <div class="main_review_wrap">
               <img src="./img/Star 3.png" alt="별" />
-              <p class="review">이용자 리뷰</p>
-              <p class="review_personnel">4,584 <span>명</span></p>
-              <p class="review_description">
+              <p class="main_review">이용자 리뷰</p>
+              <p class="main_review_personnel">4,584 <span>명</span></p>
+              <p class="main_review_description">
                 2024년 모아를 통해 4,584명이 봉사 리뷰를 써주었습니다.
               </p>
             </div>
@@ -183,6 +185,11 @@
           <div class="yellow_slide">
             <div class="pic1">
               <img src="./img/index/pic1.png" alt="자원봉사" />
+              <p class="together_title2">모두 모여 봉사</p>
+              <p class="together2">
+                혼자 하기 힘든 봉사를 손쉬운 방법으로<br />
+                모두가 함께 모여 참여해봐요.
+              
             </div>
             <div class="pic2">
               <img src="./img/index/pic2.png" alt="자원봉사" />
@@ -194,15 +201,19 @@
             </div>
             <div class="pic3">
               <img src="./img/index/pic3.png" alt="자원봉사" />
+              <p class="together_title2">모두 모여 봉사</p>
+              <p class="together2">
+                혼자 하기 힘든 봉사를 손쉬운 방법으로<br />
+                모두가 함께 모여 참여해봐요.
             </div>
           </div>
         </div>
 
         <!-- 섹션5 -->
-        <div class="map_wrap">
-          <div class="map_left">
+        <div class="index_map_wrap">
+          <div class="index_map_left">
             <iframe
-              class="map"
+              class="index_map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.4926437443746!2d126.91932079999998!3d37.40182910000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b60d1b98f47e9%3A0x448b2e506d557075!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1721902209624!5m2!1sko!2skr"
               width="800"
               height="600"
@@ -212,36 +223,36 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div class="map_right">
-            <p class="map_title">
+          <div class="index_map_right">
+            <p class="index_map_title">
               내 주변에 있는 도움이 필요한<br />
               이웃을 쉽게 만나봐요!
             </p>
-            <p class="map_text">쉬운 참가등록과 지도도 살펴보세요.</p>
-            <div class="map_btn">
+            <p class="index_map_text">쉬운 참가등록과 지도도 살펴보세요.</p>
+            <div class="index_map_btn">
               <button
                 type="button"
-                class="map_btn1"
-                onclick="location.href='http://127.0.0.1:5500/sub_map.html'"
+                class="index_map_btn1"
+                onclick="location.href='http://127.0.0.1:5500/sub/sub_map.html'"
               >
                 더보기
               </button>
             </div>
           </div>
         </div>
-
-        <!-- footer -->
-        <div class="foot_wrap">
-          <a href="#" class="back"
-            ><img src="./img/index/icon.png" alt="로고" />
-          </a>
-          <div class="foot_right">
-            <p class="moa">@moa!, All right reserved.</p>
-            <a href="#">이용약관</a>
-            <a href="#">개인정보 처리방침</a>
-            <a href="#">청소년보호정책</a>
-            <a href="#">통신판매신고업번호</a>
-          </div>
+      <!-- footer -->
+      <div class="foot_wrap">
+        <a href="#" class="back"
+          ><img src="../img/index/icon.png" alt="로고" />
+        </a>
+        <div class="foot_right">
+          <p class="moa">@moa!, All right reserved.</p>
+          <a href="#">이용약관</a>
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">청소년보호정책</a>
+          <a href="#">통신판매신고업번호</a>
+        </div>
+      </div>
         </div>
       </body>
     </div>

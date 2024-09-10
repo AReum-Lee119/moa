@@ -1,113 +1,8 @@
 @charset "uft-8";
 @import "./reset.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
-body {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-/* 드래그 했을 때 */
-::selection {
-  background-color: #fce53d;
-  color: #227aff;
-}
-
-/* 스크롤 모양*/
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  width: 10px;
-  background-image: linear-gradient(-225deg, #fce53d 0%, #227aff 100%);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #fce53d;
-}
-
-a {
-  color: #1e1e1e;
-}
-
-/* 상단 메뉴 */
-#wrap {
-  width: 100%;
-  height: fit-content;
-}
-
-header {
-  width: 100%;
-  height: 134px;
-}
-
-/* 로고 */
-.header_wrap1 {
-  width: 100%;
-  height: 61px;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-}
-
-/* 하단 메뉴 */
-/* 1차메뉴 */
-.header_wrap2 {
-  width: 100%;
-  height: 68px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-}
-
-nav {
-  width: 100%;
-  height: fit-content;
-  height: 68px;
-  display: flex;
-  justify-content: center;
-}
-
-.menu_wrap2 {
-  width: 50%;
-  height: 68px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 50px;
-  position: relative;
-  z-index: 1;
-}
-/* 애니메이션 */
-.menu_wrap2 > li > a::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 30%;
-  top: 36%;
-  right: 0;
-  z-index: -1;
-  background: #ffeb3b;
-  transition: all 0.3s ease;
-}
-.menu_wrap2 > li:hover a::after {
-  left: 0;
-  right: auto;
-  width: 100%;
-}
-
-nav > ul > li {
-  line-height: 68px;
-  position: relative;
-}
-
-nav > ul > li > a:hover {
-  color: #181818;
-}
+@import "../sub/sub_more_than_two_people.html";
+@import "../css/common.css";
 
 /* 메인 이미지 */
 .main_bg {
@@ -161,8 +56,10 @@ nav > ul > li:hover .submenu {
 /* 메인 */
 
 .main_bg {
-  width: 100%;
+  width: 1910px;
   height: 800px;
+  position: relative;
+  left: 5%;
 }
 
 /* 메인 이미지 */
@@ -174,7 +71,7 @@ nav > ul > li:hover .submenu {
 }
 
 /* 개인등록 / 2인 이상 등록 */
-.teb_wrap {
+.teb_box_wrap {
   width: auto;
   height: auto;
   text-align: center;
@@ -182,7 +79,7 @@ nav > ul > li:hover .submenu {
   font-size: 38px;
 }
 
-.teb_wrap ul {
+.teb_box_wrap ul {
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -191,14 +88,14 @@ nav > ul > li:hover .submenu {
   margin: 0 auto;
 }
 
-.teb_wrap ul .teb_review {
+.teb_box_wrap ul .teb_box_review {
   color: #181818;
   width: 220px;
   position: relative;
 }
 
 /* 애니메이션 */
-.teb_review a::after {
+.teb_box_review a::after {
   position: absolute;
   content: "";
   width: 0;
@@ -211,17 +108,22 @@ nav > ul > li:hover .submenu {
   transition: all 0.4s ease;
 }
 
-.teb_wrap ul .teb_review:hover a::after {
+.teb_box_wrap ul .teb_box_review:hover a::after {
   left: 0;
   right: auto;
   width: 220px;
 }
 
-.teb_notice a {
+.teb_box_notice a {
   color: #a7a7a7;
 }
 
 /* 개인등록 */
+
+.input_wrap {
+  width: auto;
+  height: fit-content;
+}
 
 .registration_wrap {
   width: fit-content;
@@ -239,7 +141,7 @@ nav > ul > li:hover .submenu {
 
 .registration_1 {
   display: flex;
-  margin-left: 660px;
+  margin-left: 750px;
   font-size: 18px;
   line-height: 20px;
   gap: 20px;
@@ -249,8 +151,8 @@ nav > ul > li:hover .submenu {
   margin-right: 30px;
 }
 
-.warning {
-  margin-left: 660px;
+.warning_14 {
+  margin-left: 750px;
   font-size: 16px;
   color: #227aff;
   line-height: 50px;
@@ -317,7 +219,7 @@ nav > ul > li:hover .submenu {
   height: fit-content;
   display: flex;
   column-gap: 60px;
-  margin-left: 660px;
+  margin-left: 750px;
   padding-bottom: 20px;
 }
 
@@ -343,7 +245,7 @@ nav > ul > li:hover .submenu {
   height: fit-content;
   display: flex;
   column-gap: 43px;
-  margin-left: 660px;
+  margin-left: 750px;
   box-sizing: border-box;
   padding-bottom: 20px;
 }
@@ -367,16 +269,16 @@ nav > ul > li:hover .submenu {
 /* 생년월일 */
 /* SECTION - BIRTH */
 
-.info {
+.info1 {
   width: fit-content;
   height: fit-content;
   display: flex;
   position: relative;
-  left: 660px;
+  left: 750px;
   margin-bottom: 20px;
 }
 
-.info p {
+.info1 p {
   font-size: 18px;
   margin-top: 14px;
 }
@@ -393,14 +295,14 @@ nav > ul > li:hover .submenu {
 }
 
 /* 스크롤바 */
-.info#info__birth select::-webkit-scrollbar {
+#info__birth select::-webkit-scrollbar {
   width: 10px;
 }
-.info#info__birth select::-webkit-scrollbar-thumb {
+#info__birth select::-webkit-scrollbar-thumb {
   background-color: #b6b6b6;
   border-radius: 3px;
 }
-.info#info__birth select::-webkit-scrollbar-track {
+#info__birth select::-webkit-scrollbar-track {
   background-color: #ebe9e9;
   border-radius: 6px;
 }
@@ -412,13 +314,14 @@ nav > ul > li:hover .submenu {
   padding-left: 10px;
 }
 
-.info_wrap {
+.info_wrap1 {
   margin-left: 38px;
   display: flex;
   column-gap: 19px;
 }
 
-.box {
+#birth-month,
+#birth-day {
   width: 160px;
   height: 48px;
   border: 0px;
@@ -427,12 +330,26 @@ nav > ul > li:hover .submenu {
 }
 
 /* 지역 */
-#place_wrap {
+#area_place_wrap {
   width: fit-content;
   height: fit-content;
+  display: flex;
+  position: relative;
+  left: 750px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
-#place {
+#area_place_wrap .area_place {
+  margin-left: 71px;
+  padding-left: 14px;
+}
+
+#area_place_wrap .area_spot {
+  margin-top: 12px;
+}
+
+#area_place {
   width: 520px;
   height: 48px;
   border-radius: 4px;
@@ -440,7 +357,7 @@ nav > ul > li:hover .submenu {
   border: 0px;
   background-color: #f2f2f2;
   color: #1e1e1e;
-  margin-left: 70px;
-  padding-left: 10px;
+  margin-left: 68px;
+  padding-left: 11px;
   margin-bottom: 120px;
 }

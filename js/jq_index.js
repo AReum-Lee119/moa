@@ -1,15 +1,4 @@
-// 마우스 커서 이벤트
-
-$(function () {
-  //top 버튼
-  $("#top").on("click", function (event) {
-    event.preventDefault();
-    $("html").animate({ scrollTop: 0 }, 1000);
-  });
-});
-
 // 카운트 다운
-
 $(function () {
   var cnt0 = 5000;
 
@@ -23,7 +12,7 @@ $(function () {
       if (cnt0 > 5595) {
         clearInterval(id0);
       } else {
-        $(".personnel").text(cnt0);
+        $(".num_personnel").text(cnt0);
       }
     }
   }
@@ -42,7 +31,7 @@ $(function () {
       if (cnt0 > 941) {
         clearInterval(id0);
       } else {
-        $(".hope_personnel").text(cnt0);
+        $(".main_hope_personnel").text(cnt0);
       }
     }
   }
@@ -61,8 +50,17 @@ $(function () {
       if (cnt0 > 4584) {
         clearInterval(id0);
       } else {
-        $(".review_personnel").text(cnt0);
+        $(".main_review_personnel").text(cnt0);
       }
     }
   }
+});
+
+//top 버튼
+
+$(function () {
+  $("#top").on("click", function (event) {
+    event.preventDefault();
+    $("html").animate({ scrollTop: 0 }, 1000);
+  });
 });
