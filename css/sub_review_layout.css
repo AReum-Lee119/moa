@@ -59,15 +59,12 @@ body {
   color: #a7a7a7;
 }
 
-/* 리뷰 */
+/* 상단 전체 리뷰 */
 .user_review_wrap {
   width: auto;
   height: fit-content;
   padding-top: 60px;
-  position: relative;
 }
-
-/* 리뷰1 */
 
 .user_insta_1 {
   width: 100%;
@@ -76,53 +73,147 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
-}
-
-.user_insta_1 img {
-  border-radius: 20px;
   cursor: pointer;
 }
 
-.user_insta_review_1 img {
-  overflow: hidden;
-}
-
-.insta_txt1 h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: inherit;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
+/* 상단 리뷰 */
+/* 1 */
 .user_insta_review_1 {
   position: relative;
+}
+
+.user_insta_review_1 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.review_txt1 {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding-top: 200px;
   box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
 }
 
-.insta_1 .user_insta_review_1:hover {
-  filter: brightness(30%);
-  transition: 0.3s;
+.user_insta_review_1:hover .review_txt1 {
+  opacity: 1;
 }
 
-.insta_1 .review2:hover {
-  filter: brightness(30%);
-  transition: 0.3s;
+.review_txt1 h2 {
+  font-size: 24px;
+  font-family: 700;
+  margin-bottom: 18px;
 }
 
-.insta_1 .review3:hover {
-  filter: brightness(30%);
-  transition: 0.3s;
+.review_txt1 p {
+  font-size: 18px;
+  font-family: 400;
+  margin-bottom: 70px;
+  line-height: 24px;
 }
 
-/* 리뷰2 */
-.insta_2 {
+/* 2 */
+.user_insta_review_2 {
+  position: relative;
+}
+
+.user_insta_review_2 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.review_txt2 {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding-top: 200px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.user_insta_review_2:hover .review_txt2 {
+  opacity: 1;
+}
+
+.review_txt2 h2 {
+  font-size: 24px;
+  font-family: 700;
+  margin-bottom: 18px;
+}
+
+.review_txt2 p {
+  font-size: 18px;
+  font-family: 400;
+  margin-bottom: 70px;
+  line-height: 24px;
+}
+
+/* 3 */
+.user_insta_review_3 {
+  position: relative;
+}
+
+.user_insta_review_3 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.review_txt3 {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding-top: 200px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.user_insta_review_3:hover .review_txt3 {
+  opacity: 1;
+}
+
+.review_txt3 h2 {
+  font-size: 24px;
+  font-family: 700;
+  margin-bottom: 18px;
+}
+
+.review_txt3 p {
+  font-size: 18px;
+  font-family: 400;
+  margin-bottom: 70px;
+  line-height: 24px;
+}
+
+/* 하단 전체 리뷰 */
+.user_review_wrap {
+  width: auto;
+  height: fit-content;
+  padding-top: 60px;
+}
+
+.user_insta_2 {
   width: 100%;
   height: auto;
   display: flex;
@@ -132,22 +223,133 @@ body {
   cursor: pointer;
 }
 
-.insta_2 img {
-  border-radius: 20px;
-  margin-top: 50px;
+/* 하단리뷰  */
+/* 4 */
+.user_insta_review_4 {
+  position: relative;
 }
 
-.insta_2 .review4:hover {
-  filter: brightness(30%);
-  transition: 0.3s;
+.user_insta_review_4 img {
+  width: 100%;
+  border-radius: 20px;
 }
-.insta_2 .review5:hover {
-  filter: brightness(30%);
-  transition: 0.3s;
+
+.review_txt4 {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding-top: 200px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
 }
-.insta_2 .review6:hover {
-  filter: brightness(30%);
-  transition: 0.3s;
+
+.user_insta_review_4:hover .review_txt4 {
+  opacity: 1;
+}
+
+.review_txt4 h2 {
+  font-size: 24px;
+  font-family: 700;
+  margin-bottom: 18px;
+}
+
+.review_txt4 p {
+  font-size: 18px;
+  font-family: 400;
+  margin-bottom: 70px;
+  line-height: 24px;
+}
+/* 5 */
+.user_insta_review_5 {
+  position: relative;
+}
+
+.user_insta_review_5 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.review_txt5 {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding-top: 200px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.user_insta_review_5:hover .review_txt5 {
+  opacity: 1;
+}
+
+.review_txt5 h2 {
+  font-size: 24px;
+  font-family: 700;
+  margin-bottom: 18px;
+}
+
+.review_txt5 p {
+  font-size: 18px;
+  font-family: 400;
+  margin-bottom: 70px;
+  line-height: 24px;
+}
+
+/* 6 */
+.user_insta_review_6 {
+  position: relative;
+}
+
+.user_insta_review_6 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.review_txt6 {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  padding-top: 200px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.user_insta_review_6:hover .review_txt6 {
+  opacity: 1;
+}
+
+.review_txt6 h2 {
+  font-size: 24px;
+  font-family: 700;
+  margin-bottom: 18px;
+}
+
+.review_txt6 p {
+  font-size: 18px;
+  font-family: 400;
+  margin-bottom: 70px;
+  line-height: 24px;
 }
 
 /* 더보기 버튼 */
@@ -169,10 +371,9 @@ body {
   border: 1px solid #227aff;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: absolute;
-  left: 50%;
-  top: 40px;
-  z-index: 1;
+  margin-left: 46%;
+  margin-top: 60px;
+  margin-bottom: 200px;
 }
 
 .detail_btn .btn_1:hover {

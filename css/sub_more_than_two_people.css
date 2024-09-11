@@ -361,3 +361,74 @@ nav > ul > li:hover .submenu {
   padding-left: 11px;
   margin-bottom: 120px;
 }
+
+/* 두번째 활동가 14세 미만 */
+
+/* 14세 미만 */
+
+.registration_3 {
+  display: flex;
+  margin-left: 750px;
+  font-size: 18px;
+  line-height: 20px;
+  gap: 20px;
+}
+
+.registration_3 p {
+  margin-right: 30px;
+}
+
+.radio_box3 {
+  display: inline-block;
+  display: inline;
+  zoom: 1;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 기본 라디오 버튼 숨기기 */
+.radio_box3 input[type="radio"] {
+  display: none;
+}
+
+/* 선택되지 않은 라디오 버튼 스타일 꾸미기 */
+.on3 {
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 선택된 라디오 버튼 스타일 꾸미기 */
+.radio_box3 input[type="radio"]:checked + .on3 {
+  background: #ffeb3b;
+}
+.on3:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio_box3 input[type="radio"]:checked + .on3:after {
+  display: block;
+}
+.on3:after {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+/* 추가 버튼 */

@@ -41,6 +41,7 @@
 }
 
 /* 섹션2 */
+
 .spirit {
   width: auto;
   height: auto;
@@ -48,26 +49,298 @@
   justify-content: center;
 }
 
-.spirit_left {
-  width: 50%;
+/* 좌측 */
+#spirit_left {
+  width: 30%;
   height: auto;
+  position: relative;
+  margin-left: 16%;
+  margin-top: 2%;
 }
 
 .my_profile {
   width: 190px;
   height: 48px;
   background-color: #fce53d;
-  border: 1px solid #f9f9f9;
   border-radius: 24px;
-  text-align: center;
-  font-size: 26px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 76%;
+  left: 17%;
 }
 
-.spirit_right {
-  width: 50%;
+#spirit_left .detail_profile {
+  font-size: 22px;
+  margin-top: 40px;
+  text-align: center;
+  margin-right: 38%;
+  color: #191919;
+}
+
+#spirit_left .detail_profile span {
+  font-weight: 600;
+}
+
+/* 중앙 */
+#spirit_center {
+  width: 20%;
+  height: fit-content;
+  text-align: center;
+}
+
+#location {
+  width: auto;
+  margin-top: 15%;
+}
+
+.my_location,
+.number_of_times {
+  font-size: 22px;
+  font-weight: 500;
+  color: #191919;
+  margin-bottom: 20px;
+}
+
+#times {
+  width: auto;
+  margin-top: 15%;
+}
+
+.anyang,
+.seven {
+  font-size: 40px;
+  font-weight: 600;
+  color: #191919;
+  margin-bottom: 20px;
+}
+
+.seven span {
+  color: #227aff;
+}
+
+/* 우측 */
+#spirit_right {
+  width: 40%;
+  text-align: center;
+}
+
+.help {
+  width: auto;
+  margin-top: 7%;
+  margin-right: 60%;
+}
+
+.help .help_person {
+  font-size: 22px;
+  font-weight: 500;
+  color: #191919;
+  margin-bottom: 20px;
+}
+
+.help .five {
+  font-size: 40px;
+  font-weight: 600;
+  color: #191919;
+}
+
+.five span {
+  color: #227aff;
+}
+
+/* 섹션3 */
+#big_near_wrap1 {
+  width: auto;
   height: fit-content;
 }
 
-.locayion {
-  width: auto;
+#help_person1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #191919;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+
+#help_person1::before {
+  content: "";
+  display: block;
+  background-color: #fce53d;
+  width: 240px;
+  height: 30px;
+  position: absolute;
+  left: 58%;
+  top: 125%;
+  z-index: -1;
+}
+
+#near_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 25%;
+  margin-top: 1%;
+  margin-bottom: 4%;
+}
+
+#near_wrap p {
+  font-size: 18px;
+  color: #191919;
+}
+
+/* 프로필4 */
+#big_near_wrap2 {
+  display: flex;
+  justify-content: end;
+  gap: 4%;
+  margin-right: 16%;
+  position: relative;
+}
+
+/* 1 */
+.your_profile1 .your_help_profile1 {
+  width: 190px;
+  height: 48px;
+  background-color: #e9e9e9;
+  border-radius: 24px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 53%;
+  left: 57%;
+}
+
+.personal1 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #191919;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+.personal1 span {
+  font-weight: 600;
+}
+
+.beneficiary1 {
+  font-size: 23px;
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+/* 2 */
+.your_profile2 .your_help_profile2 {
+  width: 190px;
+  height: 48px;
+  background-color: #e9e9e9;
+  border-radius: 24px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 53%;
+  left: 84%;
+}
+
+.personal2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #191919;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+.personal2 span {
+  font-weight: 600;
+}
+
+.beneficiary2 {
+  font-size: 23px;
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+/* 3 */
+.your_profile3 .your_help_profile3 {
+  width: 190px;
+  height: 48px;
+  background-color: #e9e9e9;
+  border-radius: 24px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 53%;
+  left: 57%;
+}
+
+.personal3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #191919;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+.personal3 span {
+  font-weight: 600;
+}
+
+.beneficiary3 {
+  font-size: 23px;
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+/* 4 */
+.your_profile4 .your_help_profile4 {
+  width: 190px;
+  height: 48px;
+  background-color: #e9e9e9;
+  border-radius: 24px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 53%;
+  left: 84%;
+}
+
+.personal4 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #191919;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+
+.personal4 span {
+  font-weight: 600;
+}
+
+.beneficiary4 {
+  font-size: 23px;
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 80px;
+  font-weight: 400;
 }

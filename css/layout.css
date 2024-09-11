@@ -9,9 +9,9 @@
 @import "./reset.css";
 
 /* 메인 */
-.body {
-  width: auto;
-  height: auto;
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* 좌측 메인 */
@@ -58,7 +58,7 @@
   width: auto;
   height: auto;
   position: absolute;
-  left: 14%;
+  left: 17%;
 }
 
 .box1_text > .point {
@@ -326,7 +326,7 @@
   width: 50%;
   height: auto;
   margin-left: 52%;
-  margin-top: 258px;
+  margin-top: 271px;
   position: relative;
 }
 
@@ -417,14 +417,14 @@
 }
 
 /* 좌측 */
-.character {
-  margin-left: 16%;
+.character > img {
+  padding-left: 240%;
 }
 
 /* 우측 */
 .introduction {
   text-align: center;
-  padding-left: 8%;
+  padding-top: 1%;
 }
 
 .introduction > img {
@@ -471,9 +471,13 @@
   width: 100%;
   height: 1050px;
   background-color: #fce53d;
-  margin-top: 250px;
+  margin-top: 200px;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
+}
+
+.yellow_text {
+  margin-left: 7%;
 }
 
 .yellow_text > img {
@@ -482,9 +486,7 @@
 }
 
 .pic2 {
-  animation-duration: 0.3s;
-  animation: sca duration timing-function delay iteration-count direction
-    fill-mode;
+  margin-top: 30px;
 }
 
 .easy {
