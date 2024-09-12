@@ -1,9 +1,6 @@
 @charset "uft-8";
 @import "./reset.css";
 
-@import "../sub/sub_notice.html";
-@import "../css/common.css";
-
 /* 메인 */
 /* 공지사항 / 이용자 리뷰 */
 .tebteb_wrap {

@@ -1,9 +1,6 @@
 @charset "uft-8";
 @import "./reset.css";
 
-@import "../sub/sub_information.html";
-@import "../css/common.css";
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 body {
   font-family: "Noto Sans KR", sans-serif;

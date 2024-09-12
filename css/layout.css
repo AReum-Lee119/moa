@@ -1,12 +1,11 @@
 @charset "uft-8";
 
-@import "./common.css";
-@import "../index.html";
-
-@import "../js/jq_index.js";
-@import "../js/jquery.min.js";
-
 @import "./reset.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
 
 /* 메인 */
 body {
@@ -245,7 +244,7 @@ body {
 
 /* 섹션2 */
 .num_wrap {
-  width: 100%;
+  width: 1600px;
   height: auto;
 }
 /* 좌측 섹션 */
@@ -632,7 +631,8 @@ body {
   color: #474747;
 }
 
-.index_map_btn .index_map_btn1 {
+.index_map_btn {
+  display: block;
   width: 173px;
   height: 50px;
   font-size: 22px;
@@ -647,7 +647,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.index_map_btn .index_map_btn1:hover {
+.index_map_btn:hover {
   background-color: #227aff;
   color: #fff;
 }

@@ -1,33 +1,6 @@
 @charset "uft-8";
 @import "./reset.css";
-@import "../index.html";
-@import "../css/layout.css";
 
-@import "../sub/sub_review.html";
-@import "./sub_review_layout.css";
-
-@import "../sub/sub_registration_individual.html";
-@import "../css/sub_registration_individual_layout.css";
-
-@import "../sub/sub_notice.html";
-@import "../css/sub_notice_layout.css";
-
-@import "../sub/sub_more_than_two_people.html";
-@import "../css/sub_more_than_two_people.css";
-
-@import "../sub/sub_map.html";
-@import "../css/sub_map_layout.css";
-
-@import "../sub/sub_information.html";
-@import "../css/sub_information.css";
-
-@import " ../js/jquery.min.js";
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
-
-body {
-  font-family: "Noto Sans KR", sans-serif;
-}
 /* 마우스 커서 이벤트 */
 
 /* 드래그 했을 때 */
@@ -55,13 +28,6 @@ a {
   color: #1e1e1e;
 }
 /* TOP 버튼 */
-.top_box {
-  width: 500px;
-  border: 4px solid #227aff;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: aliceblue;
-}
 
 #top_top {
   display: block;
@@ -78,6 +44,7 @@ a {
   bottom: 50px;
   right: 50px;
   z-index: 999;
+  transition: all 0.3s ease;
 }
 
 h6 {
@@ -129,7 +96,7 @@ nav {
 }
 
 .menu_wrap2 {
-  width: 50%;
+  width: 100%;
   height: 68px;
   display: flex;
   justify-content: center;
@@ -195,7 +162,6 @@ nav > ul > li:hover .submenu {
   width: 8%;
   height: 68px;
   position: absolute;
-  right: 0;
   left: 80%;
   display: flex;
   justify-content: space-between;
@@ -203,7 +169,10 @@ nav > ul > li:hover .submenu {
 }
 
 .icon > a:hover {
-  background-image: url(../img/ellipse.png);
+  width: 10px;
+  height: 10px;
+  background-color: #fce53d;
+  border-radius: 10px;
   background-repeat: no-repeat;
 }
 

@@ -1,7 +1,6 @@
-// 카운트 다운
 $(function () {
+  // 카운트 업
   var cnt0 = 5000;
-
   counterFn();
 
   function counterFn() {
@@ -16,11 +15,8 @@ $(function () {
       }
     }
   }
-});
 
-$(function () {
   var cnt0 = 614;
-
   counterFn();
 
   function counterFn() {
@@ -35,11 +31,8 @@ $(function () {
       }
     }
   }
-});
 
-$(function () {
   var cnt0 = 1759;
-
   counterFn();
 
   function counterFn() {
@@ -54,13 +47,22 @@ $(function () {
       }
     }
   }
-});
 
-//top 버튼
+  //top 버튼
 
-$(function () {
-  $("#top").on("click", function (event) {
+  $("#top_top").on("click", function (event) {
     event.preventDefault();
     $("html").animate({ scrollTop: 0 }, 1000);
+  });
+
+  //요소 숨겼다가 보이게 하기
+
+  const additional = $("#additional");
+
+  $("#third").hide();
+  additional.on("click", function (e) {
+    e.preventDefault();
+
+    $("#third").show();
   });
 });

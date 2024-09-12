@@ -1,10 +1,10 @@
 @charset "uft-8";
 @import "../reset.css";
-@import "../js/jquery.min.js";
 
-@import "../sub/sub_registration_individual.html";
-@import "./common.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
 /* 메인 */
 
 .main_bg {
