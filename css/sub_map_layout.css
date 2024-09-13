@@ -92,6 +92,7 @@ main {
   flex: 1;
   height: fit-content;
   text-align: center;
+  margin-left: 10%;
 }
 
 #location {
@@ -158,6 +159,7 @@ main {
   width: auto;
   height: fit-content;
   margin-top: 6%;
+  margin-bottom: 150px;
 }
 
 #help_person1 {
@@ -165,7 +167,7 @@ main {
   font-size: 40px;
   font-weight: 600;
   color: #191919;
-  margin-left: 25%;
+  margin-left: 40%;
   margin-top: 4%;
 }
 
@@ -173,10 +175,10 @@ main {
   content: "";
   display: block;
   background-color: #fce53d;
-  width: 240px;
+  width: 250px;
   height: 30px;
   position: absolute;
-  left: 55%;
+  left: 60%;
   top: 125%;
   z-index: -1;
 }
@@ -186,7 +188,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-left: 25%;
+  margin-left: 40%;
   margin-top: 1%;
   margin-bottom: 4%;
 }
@@ -197,9 +199,9 @@ main {
 }
 
 /* 프로필4 */
+
 .profile_wrapper {
   width: 100%;
-  /* background-color: salmon; */
   display: flex;
   justify-content: flex-end;
 }
@@ -210,7 +212,6 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 4%;
-  /* background-color: #227aff; */
 }
 
 /* 1 */
@@ -240,14 +241,13 @@ main {
 }
 
 .profile_wrap .img_box .talking {
-  width: 270px;
-  height: 80px;
-  border-radius: 30px;
+  width: 250px;
+  height: 70px;
+  border-radius: 20px;
   background-color: #fce53d;
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
-  line-height: 80px;
-  transition: all 0.3s ease;
+  line-height: 70px;
   cursor: pointer;
 }
 .img_box:hover .profile_wrap_hover {
@@ -290,4 +290,12 @@ main {
   line-height: 26px;
   margin-bottom: 80px;
   font-weight: 400;
+}
+
+/* footer */
+
+.foot_wrap {
+  width: 100%;
+  height: 60px;
+  background-color: #f8f8f8;
 }

@@ -197,15 +197,15 @@ body {
   left: 17%;
 }
 
-.btn_text {
-  width: 308px;
+.btn_text_wrap {
+  width: 300px;
   height: fit-content;
   margin: 0 auto;
   position: relative;
-  top: 388px;
+  top: 50%;
 }
 
-.btn1 > .btn_b1 {
+.btn1 {
   width: 308px;
   height: 58px;
   font-size: 22px;
@@ -213,17 +213,19 @@ body {
   background-color: #fff;
   border-radius: 30px;
   margin-bottom: 20px;
-  border: 1px solid #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  line-height: 58px;
 }
-.btn1 .btn_b1:hover {
-  color: #fff;
+.btn1:hover {
   background-color: #227aff;
   cursor: pointer;
 }
+.btn1:hover a {
+  color: #fff;
+}
 
-.btn2 > .btn_b2 {
+.btn2 {
   width: 308px;
   height: 58px;
   font-size: 22px;
@@ -231,15 +233,17 @@ body {
   background-color: #fff;
   border-radius: 30px;
   margin-bottom: 20px;
-  border: 1px solid #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  line-height: 58px;
 }
 
-.btn2 .btn_b2:hover {
-  color: #fff;
+.btn2:hover {
   background-color: #227aff;
   cursor: pointer;
+}
+.btn2:hover a {
+  color: #fff;
 }
 
 /* 섹션2 */
@@ -444,7 +448,7 @@ body {
   line-height: 29px;
 }
 
-.introduction_btn > .introduction_btn1 {
+.introduction_btn {
   width: 170px;
   height: 50px;
   font-size: 22px;
@@ -455,14 +459,22 @@ body {
   align-content: center;
   border: 1px solid #227aff;
   margin-top: 5%;
+  margin-left: 38%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.introduction_btn > .introduction_btn1:hover {
-  background-color: #c7c7c7;
+.introduction_btn a {
   color: #fff;
+}
+
+.introduction_btn:hover {
+  background-color: #c7c7c7;
   border: 1px solid #c7c7c7;
+}
+
+.introduction_btn:hover a {
+  color: #181818;
 }
 
 /* 섹션4 */
@@ -594,7 +606,7 @@ body {
 
 /* 섹션5 */
 .index_map_wrap {
-  width: 100%;
+  width: 1200;
   height: 800px;
   display: flex;
   padding-top: 200px;
@@ -604,7 +616,7 @@ body {
   width: 800px;
   height: 600px;
   position: relative;
-  left: 4%;
+  left: 6%;
 }
 
 .index_map {
@@ -631,7 +643,7 @@ body {
   color: #474747;
 }
 
-.index_map_btn {
+.index_map_btn_wrap {
   display: block;
   width: 173px;
   height: 50px;
@@ -641,13 +653,17 @@ body {
   margin-left: 72%;
   margin-top: 60%;
   align-items: center;
-  border: 1px solid #ebebeb;
   background-color: #ebebeb;
+  color: #181818;
+  text-align: center;
+  line-height: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.index_map_btn:hover {
+.index_map_btn_wrap:hover {
   background-color: #227aff;
+}
+.index_map_btn_wrap:hover a {
   color: #fff;
 }
